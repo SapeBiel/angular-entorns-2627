@@ -4,10 +4,11 @@ import { Joc } from './interfaces/joc';
 import { ColleccioJocs  } from './ColleccioJocs';
 import { saludar, esMajorEdat, sumarArray } from './funcions';
 import { Alumne } from './alumne';
+import { Tarjeta } from './components/tarjeta/tarjeta';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,Tarjeta],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
