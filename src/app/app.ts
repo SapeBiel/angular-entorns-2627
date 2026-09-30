@@ -5,10 +5,12 @@ import { ColleccioJocs  } from './ColleccioJocs';
 import { saludar, esMajorEdat, sumarArray } from './funcions';
 import { Alumne } from './alumne';
 import { Perfil } from './components/perfil/perfil';
+import { Tarjeta } from './components/tarjeta/tarjeta';
+import { Producte } from './interfaces/productes';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Perfil],
+  imports: [RouterOutlet,Perfil,Tarjeta],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

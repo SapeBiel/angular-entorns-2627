@@ -1,0 +1,21 @@
+/*Aqest fitxer conte els ESTILS ENCAPSULATS --> nomes afecten a aquest component
+.titol --> en aquest component
+.titol (app.css) --> OK, NO HI HA COMPLICTE
+*/
+
+.tarjeta{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: 250px;
+    display: inline-block;
+
+}
+
+h2{
+    color:#1F4E79;
+    font-size:1.1em;
+}
+
+/*Com mostro aquest component ??????*/
