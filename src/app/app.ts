@@ -17,6 +17,24 @@ import { Producte } from './interfaces/productes';
 export class App {
 
   protected readonly title = signal('angular-entorns-2627');
+/*
+  producte1: Producte ={
+        id: 1, 
+        nom: 'PC', 
+        preu: 43,
+        estoc:3,
+        categoria:'saca'
+      }
+    
+    producte2: Producte ={
+        id: 2, 
+        nom: 'Denis', 
+        preu: 33,
+        estoc: 2,
+        categoria: 'hola'
+      }
+
+      arrayproductes: Producte[] = [this.producte1, this.producte2];
 
   joc1: Joc = {
     id: 1,
@@ -109,6 +127,49 @@ provarColleccio(): void {
 alumne1 = new Alumne('Biel', 18, 'DAW', [7, 8, 6, 9]);
 
 alumne2 = new Alumne('Dani', 19, 'SMX', [3, 4, 5, 2]);
+
+
+
+ciutat: string[] = ['barcelona','Lleida', 'Tarragona', 'Girona'];
+
+*/
+    productes: Producte [] = [
+      {
+        id: 1, 
+        nom: 'Socalo', 
+        preu: 23.12,
+        estoc: 5,
+        categoria: 'Material'
+      },
+          {
+        id: 2, 
+        nom: 'Cobre', 
+        preu: 43,
+        estoc: 9,
+        categoria: 'Minerals'
+      },
+          {
+        id: 3, 
+        nom: 'Llinterna', 
+        preu: 12,
+        estoc: 1,
+        categoria: 'Eina'
+      },
+          {
+        id: 4, 
+        nom: 'Planta Carnivora', 
+        preu: 45,
+        estoc: 3,
+        categoria: 'Plantes'
+      },
+          {
+        id: 2, 
+        nom: 'Blat de moro', 
+        preu: 3,
+        estoc: 23,
+        categoria: 'Aliments'
+      }
+    ];
 
 
 }

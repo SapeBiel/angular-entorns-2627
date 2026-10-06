@@ -1,3 +1,40 @@
+<!--Sense for repetitiu
 <app-tarjeta />
+<app-tarjeta />
+<app-tarjeta />-->
+
+<!--AMB @for 
+@for (producte of producte; track producte.id){
+    <app-tarjeta />
+}-->
+<!--
+@for (ciutat of ciutat; track ciutat){
+    <p> {{ciutat}}</p>
+}-->
+
+<!--Index es una vriable especial que conte la posicio de l'element {comença per 0}--><!--
+@for (ciutat of ciutat; track ciutat; let i = $index){
+    <p>{{i+1}}. {{ciutat}}</p>
+}-->
+
+<!-- @empty
+@for(ciutat of ciutat; track ciutat){
+      <p> {{ciutat}}</p>
+} @empty{
+    <p>No h i ha ciutats per mostrar</p>
+}
+@for (producte of productes; track producte.id;let i = $index){
+    <p>{{i+1}}.{{ producte.nom }}</p>
+    <app-tarjeta/>
+}
+Crear un array de minim 5 elements al app.ts 
+usa @for per mostrar els elements de l'array
+$index -> per mostrar l'ordre
+-->
+
+@for (producte of productes; track producte.id; let i = $index){
+    <p>{{i+1}}.{{ producte.nom }}</p>
+}
+<br>
 <app-perfil />
 <router-outlet />
