@@ -35,6 +35,8 @@ $index -> per mostrar l'ordre
 @for (producte of productes; track producte.id; let i = $index){
     <p>{{i+1}}.{{ producte.nom }}</p>
 }
+
+<app-tarjeta/>
 <br>
 <app-perfil />
 <router-outlet />

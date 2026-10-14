@@ -10,10 +10,22 @@ div class ="tarjeta">
 </div>-->
 
 <div class="tarjeta">
+@if(producte.categoria == 'Informatica'){
+<h1>Destacat</h1>
+}
 
 <h2> {{producte.nom}}</h2>
+
 <p class="categoria"> {{producte.categoria}}</p>
 <p class="preu">{{ producte.preu }} € amb (+IVA) {{ preuAmbIva }}</p>
+@if(producte.preu == 0){
+<h3>Gratuit</h3>
+}@else if(producte.preu < 20){
+<h3>Oferta</h3>
+}
+@else if(producte.preu > 100){
+<h3>Premium</h3>
+}
 <p>Estoc: {{ producte.estoc}} unitats</p>
 <p>{{estatDisponible}}</p>
 

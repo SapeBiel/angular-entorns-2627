@@ -17,7 +17,7 @@ export class Tarjeta {
   producte : Producte = {
     id:1,
     nom:'Ordinador Gamer pro',
-    preu: 1299,
+    preu: 15,
     estoc: 5,
     categoria: 'Informatica'
   };

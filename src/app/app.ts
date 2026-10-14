@@ -171,6 +171,17 @@ ciutat: string[] = ['barcelona','Lleida', 'Tarragona', 'Girona'];
       }
     ];
 
+    /*
+    si el preu es inferiro a 20 oferta
+    si el preu es 0 gratuit
+    si es superior a 100 premium
+
+    if find d'un for per marcar productes especials
+
+    si la categoria es informatica 
+    
+    --> destacat
+    */ 
 
 }
 
