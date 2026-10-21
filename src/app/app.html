@@ -30,13 +30,21 @@
 Crear un array de minim 5 elements al app.ts 
 usa @for per mostrar els elements de l'array
 $index -> per mostrar l'ordre
--->
+
 
 @for (producte of productes; track producte.id; let i = $index){
     <p>{{i+1}}.{{ producte.nom }}</p>
 }
+-->
 
-<app-tarjeta/>
-<br>
-<app-perfil />
+<h2>BINDINGS EN ANGULAR</h2>
+<!--INTERPOLACIO: {{}} TS HTML (text)-->
+<!--PROPERTY BINDINGS: [propietat]="expr" TS -> HTML (propietat DOM)-->
+<!--
+disabled = "true" -> atribut amb tesxxt "true" (sempre deshabilitat)
+[disabled] = "true" -> angular evaluara el boolea true i assignara aquest boolea a la propietat disabled
+
+-->
+
+<app-botiga></app-botiga>
 <router-outlet />
