@@ -9,6 +9,9 @@ import { ProducteLab, PRODUCTES_LAB } from '../producte-lab';
 export class Botiga {
 title='Botiga de bindings';
 productes : ProducteLab[] = PRODUCTES_LAB;
+carret:number[] = [];
+
+//Creea un metode per mostrar el que hi ha al carrret
 
   teEstoc(p:ProducteLab): boolean{
     return p.estoc> 0;
@@ -29,7 +32,20 @@ productes : ProducteLab[] = PRODUCTES_LAB;
     return 'https://botiga.cat/producte/${p.id}';
   }
 
+  afegir(p: ProducteLab) : void{
+    if(this.teEstoc(p)){
+      this.carret.push(p.id);
+    }
+  }
 
+  mostrarcarret(p : ProducteLab):boolean {
+    for(let l=0;l <this.carret.length;l++){
+          if(p.id == this.carret[l]){
+            return true;
+          }
+        }
+        return false;
+  }
 
 }
 

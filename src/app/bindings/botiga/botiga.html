@@ -34,7 +34,18 @@
             <article class="fitxa" [class.destacat]=" p.preu>500" [class.esgotat]="!teEstoc(p)">
                 <h2> {{p.nom}}</h2>
                 <p class="preu" [style.color]="p.preu>500 ? '#C00000' : 'blue'">{{p.preu}} €</p>
-                <button class="boto-compra" [disabled]="!teEstoc(p)">Afegir al carret</button>
+                <button class="boto-compra" [disabled]="!teEstoc(p)" (click)="afegir(p)">Afegir al carret</button>
+            </article>
+        }
+</div>
+<h1>hola</h1>
+        <div class="graella">
+            <h1>[style] estils inline calculats</h1>
+        @for(p of productes; track  p.id){
+            <article class="fitxa" [class.destacat]=" p.preu>500" [class.esgotat]="!teEstoc(p)" [style.display]="mostrarcarret(p) ? 'block' : 'none'">
+                <h2> {{p.nom}}</h2>
+                <p class="preu" [style.display]="mostrarcarret(p) ? 'none' : 'block'">{{p.preu}} €</p>
+                <button class="boto-compra" [disabled]="!teEstoc(p)" (click)="afegir(p)">Afegir al carret</button>
             </article>
         }
     </div>
